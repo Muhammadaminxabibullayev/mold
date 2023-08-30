@@ -5,6 +5,7 @@ import Home from "./routes/home/Home";
 import Nav from "./components/nav/Nav";
 import SubNav from "./components/SubNav/SubNav";
 import SubFooter from "./components/SubFooter/SubFooter";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       <SubFooter/>
+      <Footer/>
     </>
   );
 }
