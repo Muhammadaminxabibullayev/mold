@@ -1,0 +1,21 @@
+.product-card{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  img{
+    max-height: 230px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  h3{
+    text-align: left;
+    color: dodgerblue;
+    font-size: 500;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}

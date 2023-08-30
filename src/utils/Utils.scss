@@ -1,0 +1,25 @@
+.default-btn{
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: #0a75df;
+  }
+
+  &:active{
+    transform: scale(1.02);
+  }
+  svg{
+    margin-right: 10px;
+    font-size: 22px;
+    margin-top: -3px;
+  }
+}
