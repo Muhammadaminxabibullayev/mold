@@ -1,0 +1,41 @@
+.offer-sectiong_wrapper{
+    background: #f7f7f7 ;
+    padding-bottom: 100px;
+}
+
+.offer-title{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 33px;
+    font-weight: bolder;
+}
+.offer-sectiong_flex{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    min-height: 220px;
+    .item{
+        border-right: 1px solid #d5d5d5;
+        width: 25%;
+        max-height: 250px;
+        text-align: center;
+       
+        b{
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        p{
+            font-size: 13px;
+            width: 90%;
+            margin: 15px auto  auto auto;
+        }
+        &:last-child{
+            border: none;
+        }
+    }
+   
+}

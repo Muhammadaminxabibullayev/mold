@@ -1,27 +1,30 @@
 import React from 'react'
-import Logo from "../../assets/logo.svg"
-import { AiOutlineSearch } from "react-icons/ai"
-import "./Nav.scss"
+import './Nav.scss'
+import emailContact from '../../img/email.svg'
+import phoneContact from '../../img/phone_contact.svg'
+import ruLang from '../../img/ru.png'
+import uzLang from '../../img/uzb.svg'
+import { Container } from '../../utils/Utils'
+
 const Nav = () => {
-  return (
-    <nav>
-        <div className="nav_search">
-          <div className="nav_logo">
-            <img src={Logo} alt="logo" />
-          </div>
-          <form >
-            <input type="search" placeholder='Qidirish...' />
-            <AiOutlineSearch className='search_icon'/>
-          </form>
+    return (
+        <div>
+            <nav>
+                <Container>
+                    <div className="flex">
+                        <div className="lang">
+                            <img src={uzLang} alt="" className='lang_uz_img' />
+                            <img src={ruLang} alt="" className='lang_ru_img' />
+                        </div>
+                        <a href="tel: +998911860085" className="phone contact-method">
+                            <img src={phoneContact} alt="" />+998 91 186 00 85</a>
+                        <a href="mailto: erkinjon.hodjaev@gmail.com" className="email contact-method">
+                            <img src={emailContact} alt="" /> erkinjon.hodjaev@gmail.com</a>
+                    </div>
+                </Container>
+            </nav>
         </div>
-        <div className="pages">
-          <button>Bosh Sahifa</button>
-          <button>Hamkorlar</button>
-          <button>Biz Haqimizda</button>
-          <button>Aloqa</button>
-        </div>
-    </nav>
-  )
+    )
 }
 
 export default Nav

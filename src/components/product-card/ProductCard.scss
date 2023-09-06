@@ -5,17 +5,40 @@
   justify-content: flex-start;
   box-sizing: border-box;
   width: 100%;
+
+  .product-card__categories{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    span{
+      white-space: nowrap;
+      font-size: 12px;
+      padding: 5px;
+      background-color: #d8d7d7;
+      color: #5f5e5e;
+    }
+  }
+
+  .product-card__price{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+  }
   img{
     max-height: 230px;
+    min-height: 230px;
     width: 100%;
     object-fit: contain;
   }
 
   h3{
     text-align: left;
-    color: dodgerblue;
+    color: #4361ee;
     font-size: 500;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 20px;
+    height: 30px;
+    word-break: break-all;
   }
 }
